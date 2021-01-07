@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="menu">
+    <title>Rohan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            
+            <div class="navlogo">
+                <h1 class="heading"><span class="yel">M</span>enuzz..</h1>
+            </div>
+            <div class="navlink" id="navlink">
+                <i class="fa fa-arrow-left"onclick="closeMenu()" ></i>
+                <ul>
+                    <a href="#"><li class="li">Home</li></a>
+                    <a href="#"><li class="li">About</li></a>
+                    <a href="#"><li class="li">Contact</li></a>
+                </ul>
+                <button type="button" class="btn">SIGN UP</button>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="banner">
+            <h1> Menu <span class="yellow">In<br> One</span> Click</h1>
+        </div>
+         <div class="sidebar">
+             <div class="searchicon">
+                <i class="fa fa-list" ></i>
+                <i class="fa fa-search"></i>
+             </div>
+             <div class="socialicon">
+                <i class="fa fa-facebook" ></i>
+                <i class="fa fa-instagram" ></i>
+                <i class="fa fa-twitter" ></i>
+                
+             </div>
+         </div>
+         <div class="notification">
+             <div class="contents">
+                <p class="para"> Sing Up for Free!! and <br>get menu at a click!!<br><br><span class="num">50+</span> Restraunts</p>
+                
+             </div>
+             <div class="notiimg">
+                 <img src="img2.jpg">
+             </div>
+         </div>
+    </div>
+    <script>
+        var show = document.getElementById("navlink")
+        function showMenu(){
+            show.style.right = "0";
+        }
+        function closeMenu(){
+            show.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
